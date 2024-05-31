@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  table{
+    border: 2px solid black;
+    background-color: rgb(248, 248, 248);
+    margin: auto;
+    width: 60%;
+    color: white;
+    height: auto;
+  }
+  thead{
+    border: 1px solid black;
+    background-color: rgba(201, 222, 180, 0.438);
+    margin: auto;
+    width: 60%;
+    color: rgb(13, 30, 30);
+    height: auto;
+
+  }
+  tbody{
+    border: 1px solid black;
+    background-color: rgba(194, 196, 181, 0.438);
+    margin: auto;
+    height: auto;
+    width: 60%;
+    color: rgb(150, 35, 35);
+
+  }
+
+  .main_container{
+    display: flex;
+    flex-direction: row;
+    margin:2% 5% auto;
+    background-color: rgba(0, 0, 0, 0.212);
+    height: 700px;
+  }
+  .containerfirst{
+    width: 50%;
+    overflow:hidden;
+    padding: 3%;
+  }
+  #containerimg{
+    height: 600px;
+    width: 100%;
+    
+  }
+  .containersecond{
+    margin: 1% auto;
+  }
+  
+  h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 600px;
+  }
+
+  label{
+    font-size: 25px;
+    margin-left: 10%;
+  }
+  #Namelable{
+    margin-top: 10%;
+  }
+
+  #Name{
+     margin-left: 4%;
+     width: 50%;
+  }
+  #Mobile{
+     margin-left: 2%;
+     width: 50%;
+  }
+  #City{
+     margin-left: 7%;
+     width: 50%;
+  }
+  #Course{
+     margin-left: 3%;
+     width: 50%;
+  }
+  #State{
+     margin-left: 6.5%;
+     width: 50%;
+  }
+  #Address{
+    margin-left: 1.5%;
+     width: 50%;
+  }
+  .button{
+    text-align: center;
+    margin: 10%;
+    
+  }
+  button{
+    width: 40%;
+  }
+  button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width:200px) and ( max-width:460px){
+    .main_container{
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    background-color: rgba(0, 0, 0, 0.212);
+    height: 700px;
+  }
+  .containerfirst{
+    width: 100%;
+    overflow: hidden;
+  }
+  #containerimg{
+   border: 1px solid black;
+   width: 95%;
+   height: 200px;
+    
+  }
+  .containersecond{
+  
+    margin: auto;
+  }
+  
+  h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 300px;
+    margin: 0% 0% 10% 8% ;
+    padding: 2%;
+  }
+
+  label{
+    font-size: 25px;
+  }
+  #Namelable{
+    padding-top: 20%;
+    height: 200px;
+  }
+
+  #Name{
+     width: 50%;
+     margin-left: 8%;
+  }
+  #Mobile{
+     margin-left: 5%;
+     width: 50%;
+  }
+  #City{
+     margin-left: 12%;
+     width: 52%;
+  }
+  #Course{
+     margin-left: 4.5%;
+     width: 52%;
+  }
+  #State{
+     margin-left: 9.5%;
+     width: 52%;
+  }
+  }
+  @media screen and (min-width:461px) and ( max-width:840px){
+    .main_container{
+    display: flex;
+    flex-direction: row;
+    margin:2% 5% auto;
+    background-color: rgba(0, 0, 0, 0.212);
+    height: 700px;
+  }
+  .containerfirst{
+    width: 50%;
+    overflow:hidden;
+    padding: 3%;
+  }
+  #containerimg{
+    height: 600px;
+    width: 100%;
+    
+  }
+  .containersecond{
+    margin: 1% auto;
+  }
+  
+  h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 300px;
+  }
+
+  label{
+    font-size: 25px;
+    margin-left: 10%;
+  }
+
+  #Name{
+     margin-left: 4%;
+     width: 50%;
+  }
+  #Mobile{
+     margin-left: 2%;
+     width: 50%;
+  }
+  #City{
+     margin-left: 7%;
+     width: 50%;
+  }
+  #Course{
+     margin-left: 3%;
+     width: 50%;
+  }
+  #State{
+     margin-left: 6.5%;
+     width: 50%;
+  }
+  #Address{
+    margin-left: 1.5%;
+     width: 50%;
+  }
+  .button{
+    text-align: center;
+    margin: 10%;
+  }
+  button{
+    width: 40%;
+  }
+  }
+
+</style>
+<body>
+    <div class="main_container">
+      <div class="containerfirst">
+        <img id="containerimg" src="https://as1.ftcdn.net/v2/jpg/07/09/46/14/1000_F_709461496_qVBGOIO6fg1n9QNYwQFoLrm8SwWvyvUR.jpg">
+      </div>
+      <div class="containersecond">
+          <form id="form">
+                <h1> Registration Form</h1>
+
+                <label id="Namelable"> Name:- </label>
+        <input id="Name" placeholder="Enter your Name"><br><br>
+        <label> Mobile:- </label>
+        <input id="Mobile" placeholder="Enter your Mobile"><br><br>
+
+        <label> City:- </label>
+        <select id="City">
+          <option>-------------------Select---------------</option>
+          <option>Jaipur</option>
+          <option>Jodhpur</option>
+          <option>Bikaner</option>
+          <option>Ajmer</option>
+          <option>Jaisalmer</option>
+        </select><br><br>
+        <label> Course:- </label>
+        <select id="Course">
+          <option>----------------------Select------------------------</option>
+          <option value="html">Html</option>
+          <option>Java</option>
+          <option>JS</option>
+        </select><br><br>
+
+        <label> State:- </label>
+        <select id="State">
+          <option>----------------------Select-------------------------</option>
+          <option>Rajasthan</option>
+          <option>UP</option>
+          <option>MP</option>
+          <option>Hariyana</option>
+          <option>Delhi</option>
+        </select><br><br>
+
+        <label>Address:-</label>
+        <input id="Address" placeholder="Text Area"><br><br>
+          </form>
+          <div class="button"><button id="button">Submit</button></div>
+      </div>
+    </div>
+    <div id="Table_container"></div>
+</body>
+<script>
+let arr = JSON.parse(localStorage.getItem("user")) || [];
+const form = document.getElementById("form");
+
+function getData(e) {
+    e.preventDefault();
+
+    let obj = {
+        Name: document.getElementById("Name").value,
+        Mobile: document.getElementById("Mobile").value,
+        City: document.getElementById("City").value,
+        Course: document.getElementById("Course").value,
+        State: document.getElementById("State").value,
+        Address: document.getElementById("Address").value,
+    };
+
+    arr.push(obj);
+    localStorage.setItem("user", JSON.stringify(arr));
+    displaydata(arr);
+    form.reset();
+}
+
+let button = document.getElementById("button");
+button.addEventListener("click", getData);
+
+function displaydata(data) {
+    let Table_container = document.getElementById("Table_container");
+    Table_container.innerHTML = null;
+    
+    let table = document.createElement("table");
+    let thead = document.createElement("thead");
+
+    let tr = document.createElement("tr");
+    let th = document.createElement("th");
+    th.innerText = "Name";
+    let th1 = document.createElement("th");
+    th1.innerText = "Mobile";
+    let th2 = document.createElement("th");
+    th2.innerText = "City";
+    let th3 = document.createElement("th");
+    th3.innerText = "Course";
+    let th4 = document.createElement("th");
+    th4.innerText = "State";
+    let th5 = document.createElement("th");
+    th5.innerText = "Address";
+
+    tr.append(th, th1, th2, th3, th4, th5);
+    thead.append(tr);
+    table.append(thead);
+
+    data.forEach(ele => {
+        let tbody = document.createElement("tbody");
+        let tr = document.createElement("tr");
+
+        let td = document.createElement("td");
+        td.innerText = ele.Name;
+        let td1 = document.createElement("td");
+        td1.innerText = ele.Mobile;
+        let td2 = document.createElement("td");
+        td2.innerText = ele.City;
+        let td3 = document.createElement("td");
+        td3.innerText = ele.Course;
+        let td4 = document.createElement("td");
+        td4.innerText = ele.State;
+        let td5 = document.createElement("td");
+        td5.innerText = ele.Address;
+
+        tr.append(td, td1, td2, td3, td4, td5);
+        tbody.append(tr);
+        table.append(tbody);
+    });
+
+    Table_container.append(table);
+}
+
+displaydata(arr);
+</script>
+</html>
